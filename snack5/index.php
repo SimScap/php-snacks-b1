@@ -17,6 +17,7 @@ Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione 
 brevi frasi ripetute, ad esempio “testo qui”). apparendo come un normale blocco di testo leggibile. Molti software di impaginazione
 e di web design utilizzano Lorem Ipsum come testo modello. Molte versioni del testo sono state prodotte negli anni.
 a volte casualmente, a volte di proposito (ad esempio inserendo passaggi ironici).";?>
+<div> Paragrafo normale:  <?php echo $paragraph ?> </div>
 <?php
     //Suddivido il paragrafo in altri paragrafi in un array
     $array = explode("." , $paragraph );
