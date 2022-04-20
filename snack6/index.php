@@ -37,15 +37,23 @@ $db = [
     ]
 ];
 ?>
+<div class="grey">
+<h2>Teachers Names and Surnames:</h2>
 <?php
 $teacherList = $db['teachers'];
 //var_dump($teacherList);
 $pmList = $db['pm'];
 //var_dump($pmList);
 for ( $i = 0 ; $i < count($teacherList); $i++) { ?>
-    <h3> <?php echo $teacherList[$i]['name'] . ' ' . $teacherList[$i]['lastname'] ?></h3>
+    <h3> <?php echo $teacherList[$i]['name'] . ' ' . $teacherList[$i]['lastname']; ?></h3>
 <?php }?>
+</div>
 
-
+<div class="green">
+<h2>PM's Names and Surnames:</h2>
+<?php for ( $i = 0 ; $i < count($pmList); $i++){ ?>
+    <h3> <?php echo $pmList[$i]['name'] . ' ' . $pmList[$i]['lastname']; ?> </h3>
+    <?php }?>
+</div>
 </body>
 </html>
