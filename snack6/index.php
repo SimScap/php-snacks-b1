@@ -38,8 +38,14 @@ $db = [
 ];
 ?>
 <?php
-    $dbKeys = array_keys($db);
-    var_dump($dbKeys);
-?>
+$teacherList = $db['teachers'];
+//var_dump($teacherList);
+$pmList = $db['pm'];
+//var_dump($pmList);
+for ( $i = 0 ; $i < count($teacherList); $i++) { ?>
+    <h3> <?php echo $teacherList[$i]['name'] . ' ' . $teacherList[$i]['lastname'] ?></h3>
+<?php }?>
+
+
 </body>
 </html>
